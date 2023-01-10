@@ -9,6 +9,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <title>Oxygen Group</title>
     <style type="text/css">
       @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
@@ -82,6 +84,31 @@
           width: 100% !important;
           max-width: 100% !important;
         }
+      }
+
+      /* Custom Dark Mode Colors */
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+
+
+        .letter-container {
+          background-color: #333333 !important;
+        }
+
+        .reply {
+          color: #ffffff !important;
+        }
+
+        /* h1,
+        h2,
+        h3,
+        p {
+          color: #ffffff !important;
+        } */
       }
     </style>
 
@@ -600,6 +627,7 @@
                     <tr>
                       <td class="cloud">
                         <p
+                          class="reply"
                           style="
                             margin: 0;
                             font-weight: 400;
