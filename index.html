@@ -31,17 +31,30 @@
 
       a {
         text-decoration: none;
-        color: inherit !important;
+        color: #5840E9 !important;
         font-size: inherit;
         font-weight: inherit;
       }
       .cloud {
         background-image: url(https://i.ibb.co/QDkg0VB/cloud.png);
         background-position: center;
+        /* background-position: top; */
         background-size: 100%;
         background-repeat: no-repeat;
         height: 140px;
         max-width: 328px;
+      }
+      .global {
+          background-image: url(./assets/icons/global.png) !important;
+        }
+      .telegram {
+        background-image: url(./assets/icons/telegram.png) !important;
+      }
+      .whatsapp {
+        background-image: url(./assets/icons/whatsapp.png) !important;
+      }
+      .vk {
+        background-image: url(./assets/icons/vk.png) !important;
       }
 
       @media screen and (max-width: 599.98px) {
@@ -102,13 +115,19 @@
         .reply {
           color: #ffffff !important;
         }
+        .global {
+          background-image: url(./assets/icons/global-white.png) !important;
+        }
+        .telegram {
+          background-image: url(./assets/icons/telegram-white.png) !important;
+        }
+        .vk {
+          background-image: url(./assets/icons/vk-white.png) !important;
+        }
+        .whatsapp {
+          background-image: url(./assets/icons/whatsapp-white.png) !important;
+        }
 
-        /* h1,
-        h2,
-        h3,
-        p {
-          color: #ffffff !important;
-        } */
       }
     </style>
 
@@ -287,8 +306,8 @@
                             max-width: 262px;
                           "
                         >
-                          Благодарим<br />
-                          за ваш запрос!
+                          Видим<br />
+                          ваш запрос!
                         </p>
                       </td>
                     </tr>
@@ -303,8 +322,8 @@
                             color: #1c1e23;
                           "
                         >
-                          Наш менеджер свяжется<br />
-                          с вами в ближайшее время.
+                          Мы позвоним вам<br />
+                          в ближайшее время.
                         </p>
                       </td>
                     </tr>
@@ -414,10 +433,10 @@
                   style="width: 100%"
                 >
                   <tbody>
-                    <tr>
+                    <tr style="width: 100%; display: flex; flex-direction: column;">
                       <td
                         align="center"
-                        style="padding: 0 24px 50px 24px; font-size: 0"
+                        style="padding: 0 24px 14px 24px; font-size: 0"
                         class="fourth-columns mobile-padding"
                       >
                         <!--[if (gte mso 9)|(IE)]>
@@ -434,8 +453,7 @@
                             vertical-align: middle;
                             width: 100%;
                             max-width: 47px;
-                            display: inline-block;
-                          "
+                            display: inline-block;"
                           class="column"
                         >
                           <tbody>
@@ -451,16 +469,11 @@
                                     <tr>
                                       <td>
                                         <a
+                                          class="global"
                                           href="https://oxy-group.ru?utm_source=email&utm_medium=email&utm_campaign=email"
                                           target="_blank"
+                                          style="border: 0; width: 32px; height: 32px; background-repeat: no-repeat; background-position: center; display: inline-block; background-size: 100%;"
                                         >
-                                          <img
-                                            src="https://i.ibb.co/ccndXFh/global-1.png"
-                                            alt="browser"
-                                            border="0"
-                                            width="32"
-                                            style="max-width: 32px"
-                                          />
                                         </a>
                                       </td>
                                     </tr>
@@ -500,16 +513,11 @@
                                     <tr>
                                       <td>
                                         <a
+                                          class="telegram"
                                           href="https://t.me/Oxy_group"
                                           target="_blank"
+                                          style="border: 0; width: 32px; height: 32px; background-repeat: no-repeat; background-position: center; display: inline-block; background-size: 100%;"
                                         >
-                                          <img
-                                            src="https://i.ibb.co/8gHtD7j/telegram.png"
-                                            alt="telegram"
-                                            border="0"
-                                            width="32"
-                                            style="max-width: 32px"
-                                          />
                                         </a>
                                       </td>
                                     </tr>
@@ -549,16 +557,11 @@
                                     <tr>
                                       <td>
                                         <a
+                                          class="vk"
                                           href="https://vk.com/oxy_g"
                                           target="_blank"
+                                          style="border: 0; width: 32px; height: 32px; background-repeat: no-repeat; background-position: center; display: inline-block; background-size: 100%;"
                                         >
-                                          <img
-                                            src="https://i.ibb.co/qySSm3h/vk.png"
-                                            alt="vk"
-                                            border="0"
-                                            width="32"
-                                            style="max-width: 32px"
-                                          />
                                         </a>
                                       </td>
                                     </tr>
@@ -598,16 +601,11 @@
                                     <tr>
                                       <td>
                                         <a
+                                          class="whatsapp"
                                           href="https://wa.me/79017793788"
                                           target="_blank"
+                                          style="border: 0; width: 32px; height: 32px; background-repeat: no-repeat; background-position: center; display: inline-block; background-size: 100%;"
                                         >
-                                          <img
-                                            src="https://i.ibb.co/25Cp4Sd/whatsapp.png"
-                                            alt="whatsapp"
-                                            border="0"
-                                            width="32"
-                                            style="max-width: 32px"
-                                          />
                                         </a>
                                       </td>
                                     </tr>
@@ -623,9 +621,7 @@
                       </table>
                     <![endif]-->
                       </td>
-                    </tr>
-                    <tr>
-                      <td class="cloud">
+                      <td>
                         <p
                           class="reply"
                           style="
@@ -641,6 +637,10 @@
                         >
                           Вы можете ответить на это письмо.
                         </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cloud">
                       </td>
                     </tr>
                   </tbody>
